@@ -49,7 +49,7 @@ aws-ffmpeg-guide/
 ## ⚡ Quickstart
 
 ### 1. Launch an EC2 Spot Instance
-From the AWS Console → EC2 → Launch Instance → choose **Ubuntu** or **Amazon Linux**.
+From the AWS Console → EC2 → Launch Instance → choose **Ubuntu 22**.
 Enable **Spot Instance** under *Advanced details → Purchasing option*.
 
 ### 2. Connect via SSH
@@ -64,6 +64,7 @@ cd your-repo
 ```
 
 ### 4. Install FFmpeg
+⚠️ If you used the user data file from /infrastructure, then you can skip this step.
 ```bash
 chmod +x scripts/install_ffmpeg.sh
 ./scripts/install_ffmpeg.sh
