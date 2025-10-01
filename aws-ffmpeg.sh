@@ -1,3 +1,5 @@
+#Helper Codes for setting up FFmpeg on an AWS EC2 instance and converting videos.
+
 # - Connect to Your Instance via SSH.
     ssh -i "your-key.pem" <ubuntu>@<your-ec2-public-dns>
     # - Replace `your-key.pem` with your actual key file and `<ubuntu>` with your instance's username (e.g., `ec2-user`, `ubuntu`, etc.) and `<your-ec2-public-dns>` with your instance's public DNS address.
