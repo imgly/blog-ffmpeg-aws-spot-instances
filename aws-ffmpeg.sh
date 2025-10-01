@@ -16,7 +16,7 @@
     # (Ubuntu)
         sudo apt install ffmpeg -y
     # (Amazon Linux)
-        sudo amazon-linux-extras enable epel
+        sudo amazon-linux-extras enable epel -y
         sudo yum install ffmpeg -y
 
 # - Verify the Installation.
