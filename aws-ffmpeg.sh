@@ -1,8 +1,8 @@
-#Helper Codes for setting up FFmpeg on an AWS EC2 instance and converting videos.
+#Helper Codes for setting up FFmpeg on an AWS Spot instance and converting videos.
 
 # - Connect to Your Instance via SSH.
-    ssh -i "your-key.pem" <username>@<your-ec2-public-dns>
-    # - Replace `your-key.pem` with your actual key file and `<ubuntu>` with your instance's username (e.g., `ec2-user`, `ubuntu`, etc.) and `<your-ec2-public-dns>` with your instance's public DNS address.
+    ssh -i "your-key.pem" <username>@<your-instance-public-dns>
+    # - Replace `your-key.pem` with your actual key file and `<ubuntu>` with your instance's username (e.g., `ec2-user`, `ubuntu`, etc.) and `<your-instance-public-dns>` with your instance's public DNS address.
 
 # - Update and Install FFmpeg.
     # - Before installing FFmpeg, update your package lists and upgrade existing packages to ensure you have the latest versions.
@@ -27,10 +27,10 @@
     aws s3 cp sample.mp4 s3://your-bucket-name/input/sample.mp4
     # - Replace `sample.mp4` with the path to your local video file and `your-bucket-name` with your actual S3 bucket name.
 
-# - Download the Video from S3 to Your EC2 Instance.
+# - Download the Video from S3 to Your Spot Instance.
     aws s3 cp s3://your-bucket-name/input/sample.mp4 sample.mp4
-    # - Replace `your-bucket-name` with your actual S3 bucket name. Your EC2 instance must have the necessary permissions to access the S3 bucket, aws CLI installed and configured.
-    # - You can attach an IAM role to your EC2 instance with the necessary S3 permissions.
+    # - Replace `your-bucket-name` with your actual S3 bucket name. Your Spot instance must have the necessary permissions to access the S3 bucket, aws CLI installed and configured.
+    # - You can attach an IAM role to your Spot instance with the necessary S3 permissions.
 
 # - Convert the Video Using FFmpeg.
     ffmpeg -i sample.mp4 output.webm
