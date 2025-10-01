@@ -15,7 +15,7 @@ LOCAL_FILE=$1
 BUCKET_NAME=$2
 
 # Upload to S3 under the 'input' folder
-echo "Uploading $LOCAL_FILE to s3://$BUCKET_NAME/input/ ..."
+echo "Uploading ./assets/$LOCAL_FILE to s3://$BUCKET_NAME/input/ ..."
 aws s3 cp "$LOCAL_FILE" "s3://$BUCKET_NAME/input/$(basename "$LOCAL_FILE")"
 
 # Confirm success
