@@ -1,7 +1,7 @@
 # AWS FFmpeg Guide 🚀
 
 This repository contains scripts and examples to accompany the article *Running FFmpeg on AWS Spot Instances*.
-It demonstrates how to set up AWS, install FFmpeg, and process videos at scale while keeping costs low. Read more on the [blog here](https://img.ly/blog/how-to-run-ffmpeg-on-aws-spot-instances-for-scalable-low-cost-video-processing/).
+It demonstrates how to set up AWS, install FFmpeg, and process videos at scale while keeping costs low. Read more on the blog [How to Run FFmpeg on AWS Spot Instances for Scalable, Low-Cost Video Processing](https://img.ly/blog/how-to-run-ffmpeg-on-aws-spot-instances-for-scalable-low-cost-video-processing/).
 ---
 
 ## 📖 Overview
